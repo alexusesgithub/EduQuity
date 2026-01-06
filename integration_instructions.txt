@@ -1,0 +1,64 @@
+CAREER GUIDANCE CHATBOT INTEGRATION INSTRUCTIONS
+
+1. ADD TO YOUR EXISTING HTML FILE:
+   Add this line before the closing </body> tag:
+   <script src="career_chatbot.js"></script>
+
+2. YOUR EXISTING CHAT BUTTON:
+   The chatbot will automatically work with buttons that have these IDs/classes:
+   - id="chat-assistant"
+   - class="chat-assistant"
+   - data-chat attribute
+   - class="chatbot-btn"
+   - id="chatbot-button"
+
+3. IF YOUR BUTTON IS DIFFERENT:
+   Either:
+   - Add id="chat-assistant" to your existing button
+   - Or modify line 120 in career_chatbot.js to match your button selector
+
+4. FEATURES INCLUDED:
+   ✓ Maintains conversation context
+   ✓ Professional career counselor responses
+   ✓ Student-focused guidance
+   ✓ Quick suggestion buttons
+   ✓ Responsive design
+   ✓ No backend required
+
+5. CUSTOMIZATION:
+   - Edit responses in the initializeResponses() method
+   - Modify styling in addChatbotStyles() method
+   - Add more keywords as needed
+
+==========================================
+SKILL DEVELOPMENT COURSES INTEGRATION - NAVIGATION BUTTON
+
+SIMPLE INTEGRATION FOR NAVIGATION BAR:
+
+1. ADD THIS SCRIPT TO YOUR HTML (before closing </body> tag):
+   <script src="skill-development-courses.js"></script>
+
+2. THE SCRIPT WILL AUTOMATICALLY:
+   ✓ Find your "Scholarships" link in the navigation
+   ✓ Add "Skill Development Courses" link right after it
+   ✓ Match the styling of existing navigation links
+   ✓ Add hover effects and click functionality
+
+3. FEATURES:
+   ✓ 3 core courses with embedded YouTube videos
+   ✓ Web Development, Data Analysis, Digital Marketing
+   ✓ Clean modal design with course descriptions
+   ✓ Direct links to full YouTube courses
+   ✓ Responsive design for all devices
+
+4. FALLBACK:
+   If the navigation integration fails, it creates a fallback button
+   in the top-right corner of the page
+
+5. COURSES INCLUDED:
+   - Web Development Fundamentals (HTML, CSS, JavaScript)
+   - Data Analysis with Python (pandas, visualization)
+   - Digital Marketing Essentials (SEO, social media)
+
+The script will automatically integrate with your navigation and create
+a seamless skill development section that matches your existing design!

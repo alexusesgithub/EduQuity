@@ -1,0 +1,61 @@
+{
+  "industries": {
+    "technology": {
+      "popular_roles": ["Software Engineer", "Data Scientist", "Product Manager", "UX Designer"],
+      "growth_outlook": "High",
+      "required_skills": ["Programming", "Problem-solving", "Communication", "Continuous learning"],
+      "average_salary_range": "$70,000 - $150,000+"
+    },
+    "healthcare": {
+      "popular_roles": ["Nurse", "Medical Assistant", "Healthcare Administrator", "Physical Therapist"],
+      "growth_outlook": "Very High",
+      "required_skills": ["Patient care", "Attention to detail", "Communication", "Empathy"],
+      "average_salary_range": "$40,000 - $120,000+"
+    },
+    "finance": {
+      "popular_roles": ["Financial Analyst", "Accountant", "Investment Advisor", "Risk Manager"],
+      "growth_outlook": "Moderate",
+      "required_skills": ["Analytical thinking", "Attention to detail", "Math skills", "Ethics"],
+      "average_salary_range": "$50,000 - $130,000+"
+    }
+  },
+  "career_tips": {
+    "networking": [
+      "Join professional associations in your field",
+      "Attend industry conferences and meetups",
+      "Maintain an active LinkedIn profile",
+      "Offer help before asking for favors",
+      "Follow up with new connections within 24-48 hours"
+    ],
+    "interview_preparation": [
+      "Research the company and role thoroughly",
+      "Practice common interview questions",
+      "Prepare specific examples using the STAR method",
+      "Have questions ready to ask the interviewer",
+      "Follow up with a thank-you note"
+    ],
+    "resume_optimization": [
+      "Tailor your resume for each application",
+      "Use keywords from the job description",
+      "Quantify achievements with numbers",
+      "Keep it to 1-2 pages maximum",
+      "Use a clean, professional format"
+    ]
+  },
+  "learning_resources": {
+    "free": [
+      "Coursera (audit mode)",
+      "Khan Academy",
+      "YouTube educational channels",
+      "Library resources",
+      "Government workforce development programs"
+    ],
+    "paid": [
+      "Udemy",
+      "LinkedIn Learning",
+      "Pluralsight",
+      "MasterClass",
+      "University extension programs"
+    ]
+  }
+}

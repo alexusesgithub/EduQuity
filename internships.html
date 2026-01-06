@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore internship opportunities across top companies in India">
+    <meta name="keywords" content="internships, student opportunities, India, software, marketing, finance">
+    <title>Internship Opportunities | HackSpora</title>
+    <link rel="stylesheet" href="/css/internships.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">HackSpora</a>
+                <nav class="main-nav">
+                    <a href="/" class="nav-link"><i class="fas fa-home"></i> Back to Home</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <div class="container">
+            <h1>Find Your Perfect Internship</h1>
+            <p>Discover opportunities that match your skills and career goals</p>
+        </div>
+    </section>
+
+    <section class="filters-section">
+        <div class="container">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search by company or position...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="company-filter">Company</label>
+                    <select id="company-filter">
+                        <option value="">All Companies</option>
+                        <option value="Google">Google</option>
+                        <option value="Microsoft">Microsoft</option>
+                        <option value="Amazon">Amazon</option>
+                        <option value="Zomato">Zomato</option>
+                        <option value="Swiggy">Swiggy</option>
+                        <option value="Paytm">Paytm</option>
+                        <option value="TCS">TCS</option>
+                        <option value="Infosys">Infosys</option>
+                        <option value="Wipro">Wipro</option>
+                        <option value="Flipkart">Flipkart</option>
+                        <option value="Myntra">Myntra</option>
+                        <option value="HDFC Bank">HDFC Bank</option>
+                        <option value="ICICI Bank">ICICI Bank</option>
+                        <option value="Deloitte">Deloitte</option>
+                        <option value="PwC">PwC</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="location-filter">Location</label>
+                    <select id="location-filter">
+                        <option value="">All Locations</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Remote">Remote</option>
+                        <option value="Gurugram">Gurugram</option>
+                        <option value="Noida">Noida</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Delhi">Delhi</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="type-filter">Work Type</label>
+                    <select id="type-filter">
+                        <option value="">All Types</option>
+                        <option value="Remote">Remote</option>
+                        <option value="Hybrid">Hybrid</option>
+                        <option value="Onsite">Onsite</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="field-filter">Field</label>
+                    <select id="field-filter">
+                        <option value="">All Fields</option>
+                        <option value="Software Engineering">Software Engineering</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Cloud Computing">Cloud Computing</option>
+                        <option value="Product Management">Product Management</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Finance">Finance</option>
+                        <option value="UX Design">UX Design</option>
+                        <option value="Graphic Design">Graphic Design</option>
+                        <option value="Investment Banking">Investment Banking</option>
+                        <option value="Management Consulting">Management Consulting</option>
+                        <option value="Tax Consulting">Tax Consulting</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="stipend-filter">Stipend Range</label>
+                    <select id="stipend-filter">
+                        <option value="">Any Stipend</option>
+                        <option value="0-30000">Under ₹30,000</option>
+                        <option value="30000-50000">₹30,000 - ₹50,000</option>
+                        <option value="50000-100000">Above ₹50,000</option>
+                    </select>
+                </div>
+
+                <button id="reset-filters" class="reset-btn">Reset Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="results-section">
+        <div class="container">
+            <div class="results-header">
+                <div id="results-count">Showing 15 internships</div>
+                <div class="sort-options">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by">
+                        <option value="stipend-high">Stipend: High to Low</option>
+                        <option value="stipend-low">Stipend: Low to High</option>
+                        <option value="company">Company Name</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="internships-grid">
+                <!-- Google -->
+                <div class="internship-card" data-company="Google" data-location="Bangalore" data-type="Remote" data-field="Software Engineering" data-stipend="75000">
+                    <div class="card-header">
+                        <h3>Software Engineer Intern</h3>
+                        <span class="company">Google</span>
+                        <span class="type-badge remote">Remote</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Bangalore</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹75,000/month</p>
+                        <p><i class="far fa-clock"></i> 3 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Dec 31, 2025</p>
+                    </div>
+                    <div class="skills">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>Python</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Microsoft -->
+                <div class="internship-card" data-company="Microsoft" data-location="Hyderabad" data-type="Hybrid" data-field="Data Science" data-stipend="70000">
+                    <div class="card-header">
+                        <h3>Data Science Intern</h3>
+                        <span class="company">Microsoft</span>
+                        <span class="type-badge hybrid">Hybrid</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Hyderabad</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹70,000/month</p>
+                        <p><i class="far fa-clock"></i> 6 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Nov 30, 2025</p>
+                    </div>
+                    <div class="skills">
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>ML</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Amazon -->
+                <div class="internship-card" data-company="Amazon" data-location="Remote" data-type="Remote" data-field="Cloud Computing" data-stipend="65000">
+                    <div class="card-header">
+                        <h3>Cloud Computing Intern</h3>
+                        <span class="company">Amazon</span>
+                        <span class="type-badge remote">Remote</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Remote</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹65,000/month</p>
+                        <p><i class="far fa-clock"></i> 4 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Jan 15, 2026</p>
+                    </div>
+                    <div class="skills">
+                        <span>AWS</span>
+                        <span>Docker</span>
+                        <span>Kubernetes</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Zomato -->
+                <div class="internship-card" data-company="Zomato" data-location="Gurugram" data-type="Onsite" data-field="Product Management" data-stipend="45000">
+                    <div class="card-header">
+                        <h3>Product Management Intern</h3>
+                        <span class="company">Zomato</span>
+                        <span class="type-badge onsite">Onsite</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Gurugram</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹45,000/month</p>
+                        <p><i class="far fa-clock"></i> 3 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Oct 15, 2025</p>
+                    </div>
+                    <div class="skills">
+                        <span>Strategy</span>
+                        <span>Analytics</span>
+                        <span>SQL</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Swiggy -->
+                <div class="internship-card" data-company="Swiggy" data-location="Bangalore" data-type="Hybrid" data-field="Marketing" data-stipend="35000">
+                    <div class="card-header">
+                        <h3>Marketing Intern</h3>
+                        <span class="company">Swiggy</span>
+                        <span class="type-badge hybrid">Hybrid</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Bangalore</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹35,000/month</p>
+                        <p><i class="far fa-clock"></i> 4 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Nov 10, 2025</p>
+                    </div>
+                    <div class="skills">
+                        <span>Digital Marketing</span>
+                        <span>Social Media</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Paytm -->
+                <div class="internship-card" data-company="Paytm" data-location="Noida" data-type="Onsite" data-field="Finance" data-stipend="40000">
+                    <div class="card-header">
+                        <h3>Finance Intern</h3>
+                        <span class="company">Paytm</span>
+                        <span class="type-badge onsite">Onsite</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Noida</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹40,000/month</p>
+                        <p><i class="far fa-clock"></i> 6 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Dec 5, 2025</p>
+                    </div>
+                    <div class="skills">
+                        <span>Financial Modeling</span>
+                        <span>Excel</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- TCS -->
+                <div class="internship-card" data-company="TCS" data-location="Mumbai" data-type="Hybrid" data-field="Software Engineering" data-stipend="25000">
+                    <div class="card-header">
+                        <h3>Software Development Intern</h3>
+                        <span class="company">TCS</span>
+                        <span class="type-badge hybrid">Hybrid</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Mumbai</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹25,000/month</p>
+                        <p><i class="far fa-clock"></i> 6 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Jan 20, 2026</p>
+                    </div>
+                    <div class="skills">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>MySQL</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Infosys -->
+                <div class="internship-card" data-company="Infosys" data-location="Pune" data-type="Onsite" data-field="Business Analysis" data-stipend="30000">
+                    <div class="card-header">
+                        <h3>Business Analyst Intern</h3>
+                        <span class="company">Infosys</span>
+                        <span class="type-badge onsite">Onsite</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Pune</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹30,000/month</p>
+                        <p><i class="far fa-clock"></i> 5 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Dec 15, 2025</p>
+                    </div>
+                    <div class="skills">
+                        <span>Business Analysis</span>
+                        <span>SQL</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Wipro -->
+                <div class="internship-card" data-company="Wipro" data-location="Chennai" data-type="Remote" data-field="Cybersecurity" data-stipend="28000">
+                    <div class="card-header">
+                        <h3>Cybersecurity Intern</h3>
+                        <span class="company">Wipro</span>
+                        <span class="type-badge remote">Remote</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Chennai</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹28,000/month</p>
+                        <p><i class="far fa-clock"></i> 4 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Nov 25, 2025</p>
+                    </div>
+                    <div class="skills">
+                        <span>Network Security</span>
+                        <span>Linux</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Flipkart -->
+                <div class="internship-card" data-company="Flipkart" data-location="Bangalore" data-type="Hybrid" data-field="UX Design" data-stipend="50000">
+                    <div class="card-header">
+                        <h3>UX Design Intern</h3>
+                        <span class="company">Flipkart</span>
+                        <span class="type-badge hybrid">Hybrid</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Bangalore</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹50,000/month</p>
+                        <p><i class="far fa-clock"></i> 3 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Oct 30, 2025</p>
+                    </div>
+                    <div class="skills">
+                        <span>Figma</span>
+                        <span>User Research</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Myntra -->
+                <div class="internship-card" data-company="Myntra" data-location="Remote" data-type="Remote" data-field="Graphic Design" data-stipend="35000">
+                    <div class="card-header">
+                        <h3>Graphic Design Intern</h3>
+                        <span class="company">Myntra</span>
+                        <span class="type-badge remote">Remote</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Remote</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹35,000/month</p>
+                        <p><i class="far fa-clock"></i> 4 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Nov 5, 2025</p>
+                    </div>
+                    <div class="skills">
+                        <span>Adobe Suite</span>
+                        <span>Branding</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- HDFC Bank -->
+                <div class="internship-card" data-company="HDFC Bank" data-location="Mumbai" data-type="Onsite" data-field="Investment Banking" data-stipend="45000">
+                    <div class="card-header">
+                        <h3>Investment Banking Intern</h3>
+                        <span class="company">HDFC Bank</span>
+                        <span class="type-badge onsite">Onsite</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Mumbai</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹45,000/month</p>
+                        <p><i class="far fa-clock"></i> 6 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Dec 20, 2025</p>
+                    </div>
+                    <div class="skills">
+                        <span>Financial Analysis</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- ICICI Bank -->
+                <div class="internship-card" data-company="ICICI Bank" data-location="Delhi" data-type="Hybrid" data-field="Risk Management" data-stipend="40000">
+                    <div class="card-header">
+                        <h3>Risk Management Intern</h3>
+                        <span class="company">ICICI Bank</span>
+                        <span class="type-badge hybrid">Hybrid</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Delhi</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹40,000/month</p>
+                        <p><i class="far fa-clock"></i> 5 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Jan 10, 2026</p>
+                    </div>
+                    <div class="skills">
+                        <span>Risk Analysis</span>
+                        <span>Statistics</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- Deloitte -->
+                <div class="internship-card" data-company="Deloitte" data-location="Bangalore" data-type="Onsite" data-field="Management Consulting" data-stipend="55000">
+                    <div class="card-header">
+                        <h3>Management Consulting Intern</h3>
+                        <span class="company">Deloitte</span>
+                        <span class="type-badge onsite">Onsite</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Bangalore</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹55,000/month</p>
+                        <p><i class="far fa-clock"></i> 4 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Dec 10, 2025</p>
+                    </div>
+                    <div class="skills">
+                        <span>Strategy</span>
+                        <span>Presentation</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+
+                <!-- PwC -->
+                <div class="internship-card" data-company="PwC" data-location="Mumbai" data-type="Hybrid" data-field="Tax Consulting" data-stipend="50000">
+                    <div class="card-header">
+                        <h3>Tax Consulting Intern</h3>
+                        <span class="company">PwC</span>
+                        <span class="type-badge hybrid">Hybrid</span>
+                    </div>
+                    <div class="card-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Mumbai</p>
+                        <p><i class="fas fa-rupee-sign"></i> ₹50,000/month</p>
+                        <p><i class="far fa-clock"></i> 5 months</p>
+                        <p><i class="far fa-calendar-alt"></i> Deadline: Nov 15, 2025</p>
+                    </div>
+                    <div class="skills">
+                        <span>Tax Laws</span>
+                        <span>Compliance</span>
+                    </div>
+                    <button class="apply-btn">Apply Now</button>
+                </div>
+            </div>
+
+            <div class="no-results" style="display: none;">
+                <h3>No internships found matching your criteria</h3>
+                <p>Try adjusting your filters or search terms</p>
+                <button id="clear-filters" class="reset-btn">Clear All Filters</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>HackSpora</h2>
+                    <p>Connecting students with opportunities</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                        <li><a href="/privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-envelope"></i> info@hackspora.com</p>
+                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 HackSpora. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/internships.js"></script>
+</body>
+</html>
