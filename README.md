@@ -45,7 +45,3 @@ An AI-powered platform designed to enhance educational equity by providing perso
 - Tailwind CSS
 - OpenAI integration
 - NextAuth for authentication
-
-## License
-
-This project is licensed under the MIT License. 
