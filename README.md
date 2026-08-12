@@ -193,7 +193,7 @@ Add screenshots of:
 Full Stack Developer | AI Enthusiast | Computer Science Engineer
 
 * GitHub: https://github.com/alexusesgithub
-* LinkedIn: https://linkedin.com/in/your-linkedin-profile
+* LinkedIn: https://linkedin.com/in/alex-a-968b7a296/
 
 ---
 
